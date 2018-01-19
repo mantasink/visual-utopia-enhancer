@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Visual Utopia Enhancer",
+  "version": "1.0alpha1",
+
+  "description": "Improves Visual Utopia Experience by showing city size and buildings required for next growth.",
+
+  "icons": {
+    "48": "icons/vu-enhancer.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://visual-utopia.com/build.asp*"],
+      "js": ["jquery-3.2.1.min.js", "total-buildings.js"],
+      "all_frames": true
+    }
+  ]
+
+}
